@@ -1,2 +1,0 @@
-/home/q/Desktop/prj/HyperLPR/build/linux/install/hyperlpr3/resource/images/2.jpg
-我换了摄像头，现在可以有视频流了，但是也没办法识别车牌吧，只能图片识别?https://cknnoe.ytthmk.net/jdAM6pz/4b71669c2de053013c37f091ba0a19f8

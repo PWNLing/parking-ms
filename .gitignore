@@ -13,6 +13,7 @@ build/
 data/
 logs/
 config.json
+test.txt
 
 # HyperLPR3 SDK（请放到 third_party/hyperlpr3/，但不提交到 git）
 third_party/hyperlpr3/
