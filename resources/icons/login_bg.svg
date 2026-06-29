@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 640" width="480" height="640">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1B5E20"/>
+      <stop offset="100%" stop-color="#2E7D32"/>
+    </linearGradient>
+  </defs>
+  <rect width="480" height="640" fill="url(#bg)"/>
+  <!-- 简化停车场俯视图 -->
+  <g stroke="#A5D6A7" stroke-width="2" fill="none" opacity="0.6">
+    <rect x="60"  y="180" width="80" height="120" rx="4"/>
+    <rect x="160" y="180" width="80" height="120" rx="4"/>
+    <rect x="260" y="180" width="80" height="120" rx="4"/>
+    <rect x="360" y="180" width="80" height="120" rx="4"/>
+    <rect x="60"  y="340" width="80" height="120" rx="4"/>
+    <rect x="160" y="340" width="80" height="120" rx="4"/>
+    <rect x="260" y="340" width="80" height="120" rx="4"/>
+    <rect x="360" y="340" width="80" height="120" rx="4"/>
+  </g>
+  <!-- 已停车车辆 -->
+  <g fill="#FFA500" opacity="0.85">
+    <rect x="70"  y="200" width="60" height="80" rx="6"/>
+    <rect x="270" y="200" width="60" height="80" rx="6"/>
+    <rect x="170" y="360" width="60" height="80" rx="6"/>
+  </g>
+  <!-- 空车位 -->
+  <g fill="#81C784" opacity="0.5">
+    <rect x="170" y="200" width="60" height="80" rx="6"/>
+    <rect x="370" y="200" width="60" height="80" rx="6"/>
+    <rect x="70"  y="360" width="60" height="80" rx="6"/>
+    <rect x="270" y="360" width="60" height="80" rx="6"/>
+    <rect x="370" y="360" width="60" height="80" rx="6"/>
+  </g>
+  <text x="240" y="100" font-family="Arial, sans-serif" font-size="32" font-weight="bold" text-anchor="middle" fill="white">智慧停车场</text>
+  <text x="240" y="140" font-family="Arial, sans-serif" font-size="16" text-anchor="middle" fill="#C8E6C9">Smart Parking Management</text>
+  <text x="240" y="560" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#A5D6A7">Qt6 + SQLite + HyperLPR3</text>
+</svg>

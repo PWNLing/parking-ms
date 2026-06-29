@@ -1,0 +1,269 @@
+/* ============================================================
+ * 停车场管理信息系统 QSS 主题
+ * 主色调: 绿色 #4CAF50（对齐论文"绿色为主"）
+ * ============================================================ */
+
+QWidget {
+    font-family: "Microsoft YaHei", "PingFang SC", "Noto Sans CJK SC", sans-serif;
+    font-size: 14px;
+    color: #2E3B2E;
+}
+
+QMainWindow, QDialog {
+    background-color: #F5F7F5;
+}
+
+/* ---------- 标题栏 ---------- */
+QLabel#titleLabel {
+    font-size: 18px;
+    font-weight: 600;
+    color: #1B5E20;
+    padding: 8px;
+}
+
+QLabel#subtitleLabel {
+    font-size: 13px;
+    color: #558B5E;
+}
+
+/* ---------- 主按钮（绿色） ---------- */
+QPushButton#primaryBtn,
+QPushButton[primary="true"] {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 8px 24px;
+    font-weight: 600;
+    min-height: 22px;
+}
+QPushButton#primaryBtn:hover,
+QPushButton[primary="true"]:hover {
+    background-color: #43A047;
+}
+QPushButton#primaryBtn:pressed,
+QPushButton[primary="true"]:pressed {
+    background-color: #388E3C;
+}
+QPushButton#primaryBtn:disabled,
+QPushButton[primary="true"]:disabled {
+    background-color: #A5D6A7;
+    color: #E8F5E9;
+}
+
+/* ---------- 危险按钮（橙红色，删除/出库） ---------- */
+QPushButton#dangerBtn,
+QPushButton[danger="true"] {
+    background-color: #FF7043;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 8px 24px;
+    font-weight: 600;
+    min-height: 22px;
+}
+QPushButton#dangerBtn:hover,
+QPushButton[danger="true"]:hover {
+    background-color: #F4511E;
+}
+QPushButton#dangerBtn:disabled,
+QPushButton[danger="true"]:disabled {
+    background-color: #FFAB91;
+}
+
+/* ---------- 次按钮 ---------- */
+QPushButton {
+    background-color: #FFFFFF;
+    color: #2E3B2E;
+    border: 1px solid #C8E6C9;
+    border-radius: 6px;
+    padding: 8px 20px;
+    min-height: 22px;
+}
+QPushButton:hover {
+    background-color: #E8F5E9;
+    border-color: #4CAF50;
+}
+QPushButton:pressed {
+    background-color: #C8E6C9;
+}
+QPushButton:disabled {
+    color: #B0BEC5;
+    border-color: #ECEFF1;
+    background-color: #FAFAFA;
+}
+
+/* ---------- 输入框 ---------- */
+QLineEdit, QSpinBox, QDoubleSpinBox, QDateTimeEdit, QComboBox {
+    border: 1px solid #C8E6C9;
+    border-radius: 4px;
+    padding: 6px 10px;
+    background: white;
+    selection-background-color: #C8E6C9;
+    selection-color: #1B5E20;
+    min-height: 22px;
+}
+QLineEdit:focus, QSpinBox:focus, QDoubleSpinBox:focus,
+QDateTimeEdit:focus, QComboBox:focus {
+    border: 1px solid #4CAF50;
+}
+QLineEdit[error="true"] {
+    border: 1px solid #F44336;
+    background: #FFEBEE;
+}
+
+/* ---------- 密码框 ---------- */
+QLineEdit[echoMode="2"] {
+    letter-spacing: 2px;
+}
+
+/* ---------- 标签 ---------- */
+QLabel {
+    color: #2E3B2E;
+}
+QLabel#captionLabel {
+    color: #607D8B;
+    font-size: 12px;
+}
+QLabel#errorLabel {
+    color: #F44336;
+    font-size: 12px;
+}
+QLabel#successLabel {
+    color: #4CAF50;
+    font-size: 12px;
+}
+
+/* ---------- 分组框 ---------- */
+QGroupBox {
+    border: 1px solid #C8E6C9;
+    border-radius: 6px;
+    margin-top: 12px;
+    padding-top: 12px;
+    font-weight: 600;
+    color: #1B5E20;
+}
+QGroupBox::title {
+    subcontrol-origin: margin;
+    subcontrol-position: top left;
+    padding: 0 8px;
+    background: #F5F7F5;
+}
+
+/* ---------- 表格 ---------- */
+QTableWidget {
+    gridline-color: #E8F5E9;
+    alternate-background-color: #F1F8E9;
+    background: white;
+    selection-background-color: #C8E6C9;
+    selection-color: #1B5E20;
+    border: 1px solid #C8E6C9;
+    border-radius: 4px;
+}
+QTableWidget::item {
+    padding: 6px;
+    border: none;
+}
+QTableWidget::item:selected {
+    background: #C8E6C9;
+}
+QHeaderView::section {
+    background-color: #4CAF50;
+    color: white;
+    padding: 8px 6px;
+    border: none;
+    font-weight: 600;
+}
+QHeaderView::section:horizontal {
+    border-right: 1px solid #43A047;
+}
+
+/* ---------- 表格滚动条（样式化） ---------- */
+QScrollBar:vertical {
+    background: #F5F7F5;
+    width: 10px;
+    border: none;
+    margin: 0;
+}
+QScrollBar::handle:vertical {
+    background: #A5D6A7;
+    border-radius: 5px;
+    min-height: 30px;
+}
+QScrollBar::handle:vertical:hover {
+    background: #81C784;
+}
+QScrollBar::add-line:vertical, QScrollBar::sub-line:vertical {
+    height: 0;
+}
+QScrollBar:horizontal {
+    background: #F5F7F5;
+    height: 10px;
+    border: none;
+}
+QScrollBar::handle:horizontal {
+    background: #A5D6A7;
+    border-radius: 5px;
+    min-width: 30px;
+}
+
+/* ---------- Toast 提示 ---------- */
+QLabel#toastLabel {
+    background-color: #2E3B2E;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-size: 13px;
+}
+QLabel#toastSuccess {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 6px;
+}
+QLabel#toastError {
+    background-color: #F44336;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 6px;
+}
+
+/* ---------- 登录页 banner ---------- */
+QLabel#loginBanner {
+    background-color: #1B5E20;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    font-size: 22px;
+    font-weight: 600;
+    qproperty-alignment: AlignCenter;
+}
+
+/* ---------- 饼图标题 ---------- */
+QChartView {
+    background: white;
+    border: 1px solid #C8E6C9;
+    border-radius: 6px;
+}
+
+/* ---------- 菜单/工具栏 ---------- */
+QMenuBar {
+    background: #E8F5E9;
+    border-bottom: 1px solid #C8E6C9;
+}
+QMenuBar::item:selected {
+    background: #C8E6C9;
+}
+QMenu {
+    border: 1px solid #C8E6C9;
+    background: white;
+}
+QMenu::item:selected {
+    background: #C8E6C9;
+}
+
+/* ---------- 状态栏 ---------- */
+QStatusBar {
+    background: #E8F5E9;
+    color: #1B5E20;
+}
